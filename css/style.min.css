@@ -145,7 +145,7 @@ section {
     right: 0;
     background: #5d6e7d;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #DC0073, #840948);
+    background: -webkit-linear-gradient(to right, #FFCB05, #00274C);
     /* Chrome 10-25, Safari 5.1-6 */
     /* background: linear-gradient(to right,#5d6e7d, #DC0073, #840948); */
     background: linear-gradient(to right,#5d6e7d, #a0bfd9, #5d6e7d);
@@ -163,6 +163,32 @@ section {
 
 .jumbotron-single h1 {
   font-size: 3rem !important; }
+
+/* Newsletter version */
+.jumbotron-newsletter {
+  color: #ffffff;
+
+  background-position: 50% 50%;
+  position: relative;
+  border-radius: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+  min-height: 100vh; 
+}
+.jumbotron-newsletter:before {
+  position: absolute;
+  display: block;
+  content: "";
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url('canvasfloor.png');
+  background-size: cover;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DC0073, #840948);
+}
 
 .overlay {
   color: #fff; }
@@ -272,6 +298,18 @@ a:hover {
   right: 0;
   z-index: 0;
   transform: scale(1) rotate(50deg); }
+
+.rectangle-newsletter {
+  width: 2000px;
+  height: 400px;
+  background: #8E2DE2;
+  background: -webkit-linear-gradient(to right, #00274C, #1a3d5e);
+  background: linear-gradient(to right, #00274C, #1a3d5e);
+  transform-origin: 400% 100% 0;
+  position: absolute;
+  right: 0;
+  z-index: 0;
+  transform: scale(1) rotate(5deg); }
 
 @keyframes fade-in-right {
   from {
