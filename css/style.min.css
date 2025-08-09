@@ -156,7 +156,7 @@ section {
     display: inline-block;
     border: 0px solid #fff;
     padding: 30px;
-    font-size: 9rem;
+    font-size: clamp(3rem, 8vw, 9rem);
     opacity: 0;
     animation: 1s fadeInFromTop cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s forwards;
     animation-delay: .8s; }
@@ -164,7 +164,7 @@ section {
 .jumbotron-single h1 {
   font-size: 3rem !important; }
 
-/* Newsletter version */
+/* About version */
 .jumbotron-about {
   color: #ffffff;
 
@@ -185,6 +185,32 @@ section {
   left: 0;
   right: 0;
   background-image: url('097A8015(2).jpg');
+  background-size: cover;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DC0073, #840948);
+}
+
+/* About version */
+.jumbotron-handbook {
+  color: #ffffff;
+
+  background-position: 50% 50%;
+  position: relative;
+  border-radius: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+  min-height: 100vh; 
+}
+.jumbotron-handbook:before {
+  position: absolute;
+  display: block;
+  content: "";
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url('097A8120.jpg');
   background-size: cover;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #DC0073, #840948);
