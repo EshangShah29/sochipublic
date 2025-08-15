@@ -123,14 +123,59 @@
     <div class="container">
         <div class="section-content">
             <div class="title-wrap mb-5" data-aos="fade-up">
-                <h2 class="section-title">Latest <b>news</b></h2>
+                <h2 class="section-title">Access our Past <b>news</b></h2>
                 <p class="section-sub-title">Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
             </div>
+
+            <div class="row" id="newsletter-archive">
+    <!-- Newsletter items will be injected here by JavaScript -->
+</div>
+
+<script>
+fetch("https://sochinewsletters.github.io/sochi-newsletters/newsletters.json")
+    .then(response => response.json())
+    .then(newsletters => {
+        const container = document.getElementById("newsletter-archive");
+        newsletters.forEach((item, index) => {
+            const delay = index * 200; // AOS delay for staggered animation
+
+            const html = `
+            <div class="col-md-4 blog-item-wrapper" data-aos="fade-up" data-aos-delay="${delay}">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <a href="${item.url}" target="_blank">
+                            <img src="${item.thumbnail || 'img/SOCHI.jpg'}" alt="${item.title}">
+                        </a>
+                    </div>
+                    <div class="blog-text">
+                        <div class="blog-tag">
+                            <a href="${item.url}" target="_blank"><h6><small>NEWSLETTER</small></h6></a>
+                        </div>
+                        <div class="blog-title">
+                            <a href="${item.url}" target="_blank"><h4>${item.title}</h4></a>
+                        </div>
+                        <div class="blog-meta">
+                            <p class="blog-date">${item.date}</p>
+                        </div>
+                        <div class="blog-desc">
+                            <p>${item.description || "SOCHI community updates and highlights."}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            `;
+            container.innerHTML += html;
+        });
+    })
+    .catch(error => console.error("Error loading newsletters:", error));
+</script>
+
+<!--
             <div class="row">
-                <!-- Blog -->
+                <!-- Blog 
                 <div class="col-md-12 blog-holder">
                     <div class="row">
-                        <!-- Blog Item -->
+                        <!-- Blog Item 
                         <div class="col-md-4 blog-item-wrapper" data-aos="fade-up">
                             <div class="blog-item">
                                 <div class="blog-img">
@@ -164,8 +209,8 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- End of Blog Item -->
-                        <!-- Blog Item -->
+                        <!-- End of Blog Item 
+                        <!-- Blog Item 
                         <div class="col-md-4 blog-item-wrapper" data-aos="fade-up" data-aos-delay="200">
                             <div class="blog-item">
                                 <div class="blog-img">
@@ -200,7 +245,7 @@
                             </div>
                         </div>
                         <!-- End of Blog Item -->
-                        <!-- Blog Item -->
+                        <!-- Blog Item 
                         <div class="col-md-4 blog-item-wrapper" data-aos="fade-up" data-aos-delay="400">
                             <div class="blog-item">
                                 <div class="blog-img">
@@ -242,7 +287,7 @@
         </div>
     </div>
 </section>
-<!-- End of Blog Section -->	<!-- Features Section-->
+<!-- End of Blog Section -->	<!-- Features Section
 <section id="cta" class="bg-fixed overlay" style="background-image: url(img/bg.jpg);">
     <div class="container">
         <div class="section-content" data-aos="fade-up">

@@ -190,7 +190,33 @@ section {
   background: -webkit-linear-gradient(to right, #DC0073, #840948);
 }
 
-/* About version */
+/*  recruitment version */
+.jumbotron-recruitment {
+  color: #ffffff;
+
+  background-position: 50% 50%;
+  position: relative;
+  border-radius: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+  min-height: 100vh; 
+}
+.jumbotron-recruitment:before {
+  position: absolute;
+  display: block;
+  content: "";
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url('097A8182.jpg');
+  background-size: cover;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DC0073, #840948);
+}
+
+/* handbook version */
 .jumbotron-handbook {
   color: #ffffff;
 
