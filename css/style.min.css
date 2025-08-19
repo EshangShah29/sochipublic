@@ -221,7 +221,9 @@ section {
   text-shadow: 2px 4px 16px rgba(0,0,0,0.7), 0 1px 0 #fff;
 }
 
-/* Timeline styles */
+/* Recruitment Timeline styles */
+/*=============================*/
+
 .timeline {
   position: relative;
   max-width: 900px;
@@ -366,7 +368,7 @@ section {
   position: absolute;
   display: block;
   content: "";
-  opacity: 1;
+  opacity: .8;
   top: 0;
   bottom: 0;
   left: 0;
@@ -375,6 +377,10 @@ section {
   background-size: cover;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #DC0073, #840948);
+}
+
+.jumbotron-newsletter h1 {
+  text-shadow: 2px 4px 16px rgba(0,0,0,0.7), 0 1px 0 #fff;
 }
 
 .overlay {
