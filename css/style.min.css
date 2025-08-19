@@ -221,6 +221,110 @@ section {
   text-shadow: 2px 4px 16px rgba(0,0,0,0.7), 0 1px 0 #fff;
 }
 
+/* Timeline styles */
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem 0;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, #FFCB05, #00274C);
+  opacity: 0.5;
+  border-radius: 2px;
+  z-index: 0;
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-content {
+  background: rgba(255,255,255,0.85);
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(44,62,80,0.12);
+  padding: 1.5rem 2rem;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  min-width: 220px;
+  max-width: 90%;
+}
+
+.timeline-content h2 {
+  margin-top: 0;
+  color: #00274C;
+  font-weight: bold;
+}
+
+.timeline-content p {
+  margin-bottom: 0;
+  color: #333;
+}
+
+/* Timeline dots */
+.timeline-item:after {
+  content: '';
+  position: absolute;
+  top: 2rem;
+  width: 18px;
+  height: 18px;
+  background: #FFCB05;
+  border: 3px solid #00274C;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.timeline-item.left:after {
+  right: -9px;
+}
+
+.timeline-item.right:after {
+  left: -9px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline:before {
+    left: 20px;
+    transform: none;
+  }
+  .timeline-item,
+  .timeline-item.left,
+  .timeline-item.right {
+    width: 100%;
+    left: 0;
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 0;
+  }
+  .timeline-item:after {
+    left: 0;
+    right: auto;
+  }
+}
+
 /* handbook version */
 .jumbotron-handbook {
   color: #ffffff;
