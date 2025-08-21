@@ -193,6 +193,13 @@ section {
 .jumbotron-about h1 {
   text-shadow: 2px 4px 16px rgba(0,0,0,0.7), 0 1px 0 #fff;}
 
+.bio-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+s
 /*  recruitment version */
 .jumbotron-recruitment {
   color: #ffffff;
