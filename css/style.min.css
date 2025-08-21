@@ -190,6 +190,9 @@ section {
   background: -webkit-linear-gradient(to right, #DC0073, #840948);
 }
 
+.jumbotron-about h1 {
+  text-shadow: 2px 4px 16px rgba(0,0,0,0.7), 0 1px 0 #fff;}
+
 /*  recruitment version */
 .jumbotron-recruitment {
   color: #ffffff;
@@ -213,6 +216,7 @@ section {
   background: rgba(0, 0, 0, 0.15); /* Semi-transparent black overlay */
   background-image: url('097A8182.jpg');
   background-size: cover;
+  background-position: center center;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #DC0073, #840948);
 }
@@ -353,6 +357,10 @@ section {
   background: -webkit-linear-gradient(to right, #DC0073, #840948);
 }
 
+.jumbotron-handbook h1 {
+  text-shadow: 2px 4px 16px rgba(0,0,0,0.7), 0 1px 0 #fff;
+}
+
 /* Newsletter version */
 .jumbotron-newsletter {
   color: #ffffff;
@@ -382,6 +390,35 @@ section {
 .jumbotron-newsletter h1 {
   text-shadow: 2px 4px 16px rgba(0,0,0,0.7), 0 1px 0 #fff;
 }
+
+.overlay-discrimination {
+  color: #fff; }
+  .overlay-discrimination:before {
+    position: absolute;
+    display: block;
+    content: "";
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #e57a44, #75b2e4)
+    /* fallback for old browsers 
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+    /* Chrome 10-25, Safari 5.1-6 
+    ;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .overlay.bg-white {
+    color: #000; }
+    .overlay.bg-white:before {
+      background: #fff;
+      opacity: .7; }
+
+.overlay-discrimination h2 {
+  text-shadow: 2px 4px 16px rgba(0,0,0,0.7), 0 1px 0 #fff;
+}
+
+
 
 .overlay {
   color: #fff; }
@@ -1014,28 +1051,28 @@ a:hover {
 =            RESPONSIVE            =
 ==================================*/
 @media (max-width: 992px) {
+  
   .not-on-top #header-navbar {
     position: fixed;
     top: 0;
     height: auto;
     width: 100%;
     background: #ff00cc;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFCB05, #00274C);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFCB05, #00274C);
+    
+    background: -webkit-linear-gradient(to left, #FFCB05, #00274C);
+    
+    background: linear-gradient(to left, #FFCB05, #00274C);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     z-index: 11; }
+
   #header-navbar {
     padding-top: 15px !important;
     padding-bottom: 15px !important; }
   .navbar-transparent .navbar-collapse {
     background: #ff00cc;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #333399, #ff00cc);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #333399, #ff00cc);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to left, #FFCB05, #00274C);
+    
+    background: linear-gradient(to left, #FFCB05, #00274C);
     padding: 10px; } }
 
 @media (max-width: 767px) {
