@@ -489,6 +489,16 @@ a:hover {
     border-color: #fff;
     color: #fff; }
 
+.btn-blue {
+  display: inline-block;
+  background-color: #00274C;
+  border-color: none;
+  color: #fff; }
+  .btn-blue:hover {
+    background-color: #E84855;
+    border-color: #fff;
+    color: #fff; }
+
 .btn-outline-primary {
   color: #fff;
   background-color: transparent;

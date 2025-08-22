@@ -137,83 +137,85 @@
     </div>
 </div>
 
-</div>	
-
 <!--leadership directory-->
 <section id="about" class="bg-grey">
+
+
     <div class="container">
         <div class="section-content">
             <div class="title-wrap mb-5" data-aos="fade-up">
                 <h2 class="section-title">We represent schools across campus—<b>Ross, School of Information, LSA, and Kinesiology</b>—reflecting our commitment to <b> collaboration and inclusion.</b></h2>
-                <p class="section-sub-title">Click on a picture to view a profile.</p>
+                <p class="section-sub-title"></p>
+                <div class="bios-nav" style="text-align:center; margin-top:2rem">
+  <button class="btn btn-blue mx-1" data-json="biosF2025.json">Fall 2025</button>
+  <button class="btn btn-blue mx-1" data-json="biosW2024.json">Winter 2024</button>
+</div>
             </div>
 
             <div class="row" id="bios-container">
+                <!-- Bios will be loaded here -->
+            </div>
+        </div>
+    </div>
+</section>
 
 <script>
-fetch("bios.json")
-  .then(response => response.json())
-  .then(bios => {
-    const container = document.getElementById("bios-container");
-    bios.forEach((person, index) => {
-      const delay = index * 150; // staggered animation
-      const html = `
-        <div class="col-md-4 blog-item-wrapper" data-aos="fade-up" data-aos-delay="${delay}">
-          <div class="blog-item">
-            <div class="blog-img">
-              <img src="${person.photo || 'img/SOCHI.jpg'}" alt="${person.name}" style="object-fit:cover; width:100%; height:300px; border-radius:1rem;">
-            </div>
-            <div class="blog-text">
-              <div class="blog-tag">
-                <h6><small>${person.role}</small></h6>
+function loadBios(jsonFile) {
+  document.getElementById("bios-container").innerHTML = ""; // Clear previous bios
+  fetch(jsonFile)
+    .then(response => response.json())
+    .then(bios => {
+      const container = document.getElementById("bios-container");
+      bios.forEach((person, index) => {
+        const delay = index * 100;
+        const html = `
+          <div class="col-md-4 blog-item-wrapper" data-aos="fade-up" data-aos-delay="${delay}">
+            <div class="blog-item">
+              <div class="blog-img">
+                <img src="${person.photo || 'img/SOCHI.jpg'}" alt="${person.name}" loading="lazy" style="object-fit:cover; width:100%; height:300px; border-radius:1rem;">
               </div>
-              <div class="blog-title">
-                <h4>${person.name}</h4>
-              </div>
-              <div class="blog-desc">
-                <p class="bio-text" style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">${person.bio}</p>
-                <button class="read-more-btn btn btn-link p-0" style="display:none;">Read more</button>
+              <div class="blog-text">
+                <div class="blog-tag">
+                  <h6><small>${person.role || ""}</small></h6>
+                </div>
+                <div class="blog-title">
+                  <h4>${person.name || ""}</h4>
+                </div>
+                <div class="blog-desc">
+                  <p class="bio-text" style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">${person.bio || ""}</p>
+                  <button class="read-more-btn btn btn-link p-0" style="display:none;">Read more</button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      `;
-      container.innerHTML += html;
+        `;
+        container.innerHTML += html;
+      });
+      // Add Read more functionality here if needed
+    })
+    .catch(error => {
+      console.error("Error loading bios:", error);
     });
+}
 
-        // After rendering, enable Read more functionality
-    document.querySelectorAll('.blog-desc').forEach(desc => {
-      const bioText = desc.querySelector('.bio-text');
-      const btn = desc.querySelector('.read-more-btn');
-      // Check if bio overflows 3 lines
-      const lineHeight = parseInt(window.getComputedStyle(bioText).lineHeight, 10);
-      const maxHeight = lineHeight * 3;
-      if (bioText.scrollHeight > maxHeight) {
-        btn.style.display = 'inline';
-        btn.addEventListener('click', function() {
-          if (bioText.style.webkitLineClamp === "3") {
-            bioText.style.display = "block";
-            bioText.style.webkitLineClamp = "unset";
-            bioText.style.overflow = "visible";
-            btn.textContent = "Show less";
-          } else {
-            bioText.style.display = "-webkit-box";
-            bioText.style.webkitLineClamp = "3";
-            bioText.style.overflow = "hidden";
-            btn.textContent = "Read more";
-          }
-        });
-      }
+// Initial load
+document.addEventListener("DOMContentLoaded", function() {
+  var firstJson = document.querySelector('.bios-nav button').getAttribute('data-json');
+  loadBios(firstJson);
+  document.querySelectorAll('.bios-nav button').forEach(btn => {
+    btn.addEventListener('click', function() {
+      loadBios(this.getAttribute('data-json'));
     });
-  })
-  .catch(error => console.error("Error loading bios:", error));
+  });
+});
+  
 </script>
                 </div>
             </div>
         </div>
     </div>
 
-</section>	<!-- Features Section-->
+</section>	<!-- Features Section
 <section id="cta" class="bg-fixed overlay" style="background-image: url(img/bg.jpg);">
     <div class="container">
         <div class="section-content" data-aos="fade-up">
@@ -227,6 +229,7 @@ fetch("bios.json")
         </div>
     </div>
 </section>
+
 <!-- End of Features Section--></div>
 <footer class="mastfoot my-3">
     <div class="inner container">
@@ -235,31 +238,8 @@ fetch("bios.json")
          		
          	</div>
          	<div class="col-lg-4 col-md-12 d-flex align-items-center">
-         		<p class="mx-auto text-center mb-0">&copy; 2019 Roxy. Design by <a href="https://gettemplates.co" target="_blank">GetTemplates</a>.</p>
+         		<p class="mx-auto text-center mb-0">&copy; Student Organization for Computer-Human Interaction.</p>
          	</div>
-           
-            <div class="col-lg-4 col-md-12">
-            	<nav class="nav nav-mastfoot justify-content-center">
-	                <a class="nav-link" href="#">
-	                	<i class="fab fa-facebook-f"></i>
-	                </a>
-	                <a class="nav-link" href="#">
-	                	<i class="fab fa-twitter"></i>
-	                </a>
-	                <a class="nav-link" href="#">
-	                	<i class="fab fa-instagram"></i>
-	                </a>
-	                <a class="nav-link" href="#">
-	                	<i class="fab fa-linkedin"></i>
-	                </a>
-	                <a class="nav-link" href="#">
-	                	<i class="fab fa-youtube"></i>
-	                </a>
-	            </nav>
-            </div>
-            
-        </div>
-    </div>
 </footer>	<!-- External JS -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 	<script src="vendor/bootstrap/popper.min.js"></script>
@@ -268,8 +248,8 @@ fetch("bios.json")
 	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
 	<script src="vendor/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
 	<script src="vendor/isotope/isotope.min.js"></script>
-	<script src="vendor/lightcase/lightcase.js"></script>
-	<script src="vendor/waypoints/waypoint.min.js"></script>
+
+
 	 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
      <script>AOS({ once: true });</script>
 	 

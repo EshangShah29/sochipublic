@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "Melp Meredith",
+    "role": "President",
+    "photo": "https://static.wixstatic.com/media/680624_20b670296f8e4899a296abf5a00ce67c~mv2.png/v1/fill/w_242,h_238,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/1617433923052_edited.png",
+    "bio": "Melp is a Product Manager and UX Researcher with 6+ years of experience in qualitative research, product strategy, and cross-functional collaboration across EdTech, gaming, and B2B SaaS."
+  },
+
+  {
+    "id": 2,
+    "name": "Sarafina Chea",
+    "role": "Vice President",
+    "photo": "https://media.licdn.com/dms/image/v2/D5603AQEV3OGVh21RXQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1707856501724?e=1758758400&v=beta&t=2CN_WjA9B2zieZae6IypNBeHcZpBG-oR1sEFC8bdavM",
+    "bio": "Sarafina is an undergraduate student at the University of Michigan pursuing a degree in Information with a concentration in User Experience (UX) design, passionate about creating innovative and accessible user experiences. With proficiency in multiple coding languages and skills in product design and video editing, Sarafina has developed a versatile skill set that allows her to approach problems creatively and thoughtfully. Her ultimate goal is to become a UX designer that specializes in accessibility, striving to make technology inclusive for all users. Sarafina is fascinated by the intersection of technology and design and is committed to creating solutions that improve people's lives. Sarafina has great interest in languages, video editing, and design, and Sarafina loves exploring new ways to incorporate these passions into my work. With her diverse skill set, she's excited to make a meaningful impact in the field of UX design and contribute to the creation of accessible and innovative digital experiences."
+  },
+
+{
+    "id": 3,
+    "name": "Steven Liu",
+    "role": "Treasurer, Co-VP of Newsletter",
+    "photo": "https://media.licdn.com/dms/image/v2/D5603AQENrf52ejSqrw/profile-displayphoto-shrink_800_800/B56ZNpR_MXGsAk-/0/1732638143673?e=1758758400&v=beta&t=wTe3s7TlNZXtx6rcLZXu1yT3zrTM_0S6wtZDdv_PVr0",
+    "bio": "Steven is a junior at the Ross School of Business. As a transfer student, he’s passionate about creating opportunities for underrepresented students to break into tech and design. Outside of SOCHI, Steven enjoys sketching, cooking, and playing piano and violin."
+  },  
+
+  {
+    "id": 4,
+    "name": "Tasnim Tabassum",
+    "role": "Co-VP of Social Media",
+    "photo":"https://media.licdn.com/dms/image/v2/D4E03AQFTvkdB80ZLIg/profile-displayphoto-shrink_800_800/B4EZb6quCXHMAc-/0/1747962225577?e=1758758400&v=beta&t=GISoCnkgZ1hNksP0gLXpxI_JCqQhhvN_GMCrSz-a4nY",
+    "bio": "Tasnim graduated from the University of Michigan's School of Information, majoring in Information with a specialization in User Experience Design. Her passion lies in discovering ethical and innovative solutions that bridge the gap between people, information, and technology. Whether it's crafting user-centered interfaces or conducting research to understand user psychology, Tas is dedicated to creating solutions that make technology accessible and enjoyable for all."
+  },
+
+    {
+    "id": 5,
+    "name": "Reuben Crasto",
+    "role": "Co-VP of Newsletter",
+    "photo": "https://media.licdn.com/dms/image/v2/D4D35AQFvj4S1m883qg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1727243921813?e=1756432800&v=beta&t=Gwiy1eT44JlmpxhAdUW8iz8uRXa3JW8xUr_VZhvpnn4",
+    "bio": "Reuben's expertise as a product designer lies in creating meaningful design solutions supported by solid user research findings. Working with diverse product teams in the EdTech industry for more than three years has greatly shaped my work style, which is heavily influenced by the agile methodology. As a designer, Reuben strives to create memorable emotional and sensory experiences in addition to ensuring a seamless user journey. This led him to the University of Michigan's MSI program, where he's been able to learn more about human-centered design in a variety of contexts such as IoT devices, Mixed Reality, and the Automotive UX space, where he worked on incredible projects with General Motors and Hyundai Research."
+  },
+  {
+    "id": 6,
+    "name": "Megan Fan",
+    "role": "Co-VP of Social Media",
+    "photo": "https://media.licdn.com/dms/image/v2/D5603AQFJQNkcy3YjXQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1707681368245?e=1758758400&v=beta&t=rim1NcpAMRnvm_0sV20yIRF1CjG04ksUNORCo80NC9M",
+    "bio": "Megan is a designer that turns blank screens into stories, pixels into purpose, and ideas into meaningful experiences. She has a background in visual design and user experience research & design."
+  },
+
+  {
+    "id": 7,
+    "name": "Nnamdi Nwaenia",
+    "role": "VP of Recruitment",
+    "photo": "https://media.licdn.com/dms/image/v2/D5603AQG5GIh_RLr02Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1705345376602?e=1758758400&v=beta&t=x6q8VmUU808Ma1jY_wuyufM67O0wV7uLedh46cMkRz4",  
+    "bio": "Nnamdi is a second-year student at the University of Michigan studying UX Design and Information Analysis with a minor in Entrepreneurship. I'm passionate about exploring user experience and using data analysis to address critical questions, with a future career goal in Consulting or Product Management."
+  },
+
+{
+    "id": 8,
+    "name": "Tina Vũ",
+    "role": "Project Manager",
+    "photo": "https://media.licdn.com/dms/image/v2/D5603AQG9KzFw2AYIAg/profile-displayphoto-shrink_800_800/B56Zbv0nrtGsAk-/0/1747780271664?e=1758758400&v=beta&t=Mj_joP3-LV9iwFPlAiuCmOK3NVRZ9ZsxOFIjnfbP0uo",
+    "bio": "Tina is a first-generation Vietnamese-American & senior at the College of LS&A pursuing a B.A. in Political Economics. As the first in her family to pursue a degree, she's a huge advocate for education accessibility through ed-tech innovations. Beyond SOCHI, she's actively involved in Greek life, exploring Detroit, & going line-dancing with her friends."
+  }
+
+]
