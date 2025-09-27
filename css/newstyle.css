@@ -1,0 +1,46 @@
+#header-navbar {
+background: #00000050; /* fallback for browsers without backdrop-filter */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  margin-bottom: 20px;
+}
+
+.nav-item a {
+    font-size: 20px;
+}
+
+/* LinkedIn tile */
+.feature-item.linkedin-tile:hover, .feature-item.linkedin-tile:focus {
+    background: #0072b1 !important;
+    color: #fff !important;
+}
+.feature-item.linkedin-tile:hover i,
+.feature-item.linkedin-tile:focus i,
+.feature-item.linkedin-tile:hover p,
+.feature-item.linkedin-tile:focus p {
+    color: #fff !important;
+}
+
+/* Instagram tile */
+.feature-item.instagram-tile:hover, .feature-item.instagram-tile:focus {
+    background: #E1306C !important;
+    color: #fff !important;
+}
+.feature-item.instagram-tile:hover i,
+.feature-item.instagram-tile:focus i,
+.feature-item.instagram-tile:hover p,
+.feature-item.instagram-tile:focus p {
+    color: #fff !important;
+}
+
+/* Discord tile */
+.feature-item.discord-tile:hover, .feature-item.discord-tile:focus {
+    background: #5865F2 !important;
+    color: #fff !important;
+}
+.feature-item.discord-tile:hover i,
+.feature-item.discord-tile:focus i,
+.feature-item.discord-tile:hover p,
+.feature-item.discord-tile:focus p {
+    color: #fff !important;
+}
