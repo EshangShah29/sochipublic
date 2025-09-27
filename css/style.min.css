@@ -97,7 +97,8 @@ section {
   right: 0;
   left: 0;
   z-index: 11;
-  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86); }
+  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
 
 .navbar-brand {
   font-size: 40px;
