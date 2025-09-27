@@ -9,6 +9,26 @@ background: #00000050; /* fallback for browsers without backdrop-filter */
     font-size: 20px;
 }
 
+.btn-primary {
+  display: inline-block;
+  background-color: #e42030;
+  border-color: none;
+  color: #fff; }
+  .btn-primary:hover {
+    background-color: #333399;
+    border-color: #fff;
+    color: #fff; }
+
+.btn-secondary {
+  display: inline-block;
+  background-color:     #fd5b53;
+  border-color: none;
+  color: #fff; }
+  .btn-secondary:hover {
+    background-color: #FFCB05;
+    border-color: #fff;
+    color: #fff; }
+
 /* LinkedIn tile */
 .feature-item.linkedin-tile:hover, .feature-item.linkedin-tile:focus {
     background: #0072b1 !important;
